@@ -1,0 +1,21 @@
+name: non-market-housing-dashboard
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.13
+  - shiny=1.4
+  - shinywidgets=0.7.1
+  - anywidget
+  - ipyleaflet=0.20
+  - pandas=3.0.0
+  - altair=6.0.0
+  - ipykernel=7.2.0
+  - geopandas=1.1.2
+  - vl-convert-python=2.0.0
+  - libsass=0.23.0
+  - shapely=2.1.2
+  - pip
+  - pip:
+    - querychat<0.3
+    - python-dotenv>=1.0.0
