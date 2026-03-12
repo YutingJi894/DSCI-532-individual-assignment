@@ -1,4 +1,4 @@
-# Non-market Housing Dashboard
+# Individual Assignment Dashboard
 
 ## Motivation and Purpose
 
