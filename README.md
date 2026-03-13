@@ -1,9 +1,6 @@
 # Individual Assignment Dashboard
 
-## Motivation and Purpose
-
-This dashboard displays information regarding non-market housing projects in Vancouver. Non-market housing is often subsidized and intended for low and moderate income singles and families. In Vancouver, it exists in the forms of social, supportive, and co-op housing. Non-market housing initiatives are incredibly import for easing the burden of the affordability crisis on low- to moderate- income individuals. This dashboard serves as a tool to assist those in charge of planning, proposing, and developing non-market housing in identifying areas where the current landscape can be improved. The dashboard tracks information such as project status, location, clientele, and design in order to provide an view of the current state of non-market housing in the city.
-
+This repository contains an individual Shiny for R dashboard based on the group project on non-market housing in Vancouver. The app allows users to filter projects by local area and view summary metrics and a bar chart of clientele unit totals.
 
 ## Deployments
 
@@ -19,22 +16,21 @@ Clone this GitHub repository and navigate to the project folder using the follow
 
 ```bash
 git clone https://github.com/YutingJi894/DSCI-532-individual-assignment.git
-cd DSCI-532_2026_20_non_market_housing
+cd DSCI-532-individual-assignment
 ```
-
-### Setting Up the Development Environment
-
-Create and activate the development environment using the `environment.yml` file:
-
+### Install the packages
+Install the required packages with
 ```bash
-conda env create -f environment.yml
-conda activate non-market-housing-dashboard
+R -e "install.packages(c('shiny', 'bslib', 'dplyr', 'readr', 'ggplot2', 'rsconnect'), repos='https://cloud.r-project.org')"
 ```
-
+After adding or removing packages, regenerate the deployment manifest with:
+```bash
+R -e "rsconnect::writeManifest()"
+```
 ### Running the Dashboard
 
 Run the dashboard using Shiny with the following command:
 
 ```bash
-shiny run --reload --launch-browser src.app:app
+R -e "shiny::runApp()"
 ```
