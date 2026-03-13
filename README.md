@@ -6,7 +6,7 @@ This repository contains an individual Shiny for R dashboard based on the group 
 
 The dashboard is hosted on Posit Connect. Use the links below to access the live versions:
 
-- 
+- https://019ce4c7-c309-f20a-f947-56012faeeb52.share.connect.posit.cloud/
 
 ## Locally Running the Dashboard
 
