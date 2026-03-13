@@ -39,7 +39,6 @@ ui <- page_fluid(
     
     card(
       full_screen = TRUE,
-      card_header("Clientele Unit Totals"),
       plotOutput("clientele_bar", height = "400px")
     )
   )
