@@ -18,7 +18,7 @@ The dashboard is hosted on Posit Connect. Use the links below to access the live
 Clone this GitHub repository and navigate to the project folder using the following commands:
 
 ```bash
-git clone https://github.com/UBC-MDS/DSCI-532_2026_20_non_market_housing.git
+git clone https://github.com/YutingJi894/DSCI-532-individual-assignment.git
 cd DSCI-532_2026_20_non_market_housing
 ```
 
