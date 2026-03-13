@@ -4,10 +4,8 @@ library(dplyr)
 library(readr)
 library(ggplot2)
 
-# load data
 clean_df <- read_csv("clean-non-market-housing.csv", show_col_types = FALSE)
 
-# local area choices
 local_areas <- sort(unique(na.omit(clean_df$`Local Area`)))
 
 ui <- page_fluid(
@@ -46,7 +44,6 @@ ui <- page_fluid(
 
 server <- function(input, output, session) {
   
-  # reactive calc
   filtered_df <- reactive({
     if (input$input_local_area == "All") {
       clean_df
